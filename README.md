@@ -1,2 +1,2 @@
 # LnControlPanel
-Loconet Control Panel board
+![](https://github.com/lucadentella/LnControlPanel/raw/main/images/board.jpg)
