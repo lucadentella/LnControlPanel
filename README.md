@@ -14,3 +14,6 @@ LnControlPanel is an opensource board to create Loconet control panels.
  - Two Loconet connectors for **cascade** connection
  - Based on **Arduino** framework and opensource libraries
  - Configurable using a simple **menu** via **serial** connection
+ 
+## Documentation
+ - [Part list](https://github.com/lucadentella/LnControlPanel/blob/main/PARTLIST.md)
