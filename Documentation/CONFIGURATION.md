@@ -25,7 +25,11 @@ It is possible to configure LnControlPanel using a **serial terminal** (for exam
 Using an USB->Serial adapter, connect your computer to the board. 
 Make sure that TX and RX pins are **reversed**.
 
+![](https://github.com/lucadentella/espThrottle/raw/main/images/config-serial.png)
+
 Open the terminal (**115200** baud, **8N1**, **NL** as line terminator).
+
+![](https://github.com/lucadentella/espThrottle/raw/main/images/config-serial2.png)
 
 The available commands (case sensitive!) are:
 
@@ -38,3 +42,5 @@ The available commands (case sensitive!) are:
  - **STATUS**: print the current status
  - **RESET**: reset the configuration to factory
  - **HELP**: print the usage
+
+![](https://github.com/lucadentella/espThrottle/raw/main/images/config-serial3.png)
