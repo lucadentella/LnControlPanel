@@ -1,4 +1,4 @@
-# Configuration
+# Configuration :gear:
 
 LnControlPanel has **32 independent** channels; each channel can be configured in:
 
@@ -19,7 +19,7 @@ To summarize, each channel has the following parameters:
 
 See [Connections](https://github.com/lucadentella/LnControlPanel/blob/main/CONNECTIONS.md) to learn how to connect buttons/LEDs to the channels. 
 
-## Serial console
+## Serial console :electric_plug:
 It is possible to configure LnControlPanel using a **serial terminal** (for example *Arduino Serial Monitor*).
 
 Using an USB->Serial adapter, connect your computer to the board. 
