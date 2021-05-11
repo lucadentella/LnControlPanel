@@ -1,4 +1,4 @@
-# Connections
+# Connections :zap:
 
 LnControlPanel has **32 independent** channels. Each channel can be connected to:
  - a **BUTTON** (if the channel is in INPUT mode)
