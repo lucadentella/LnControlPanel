@@ -10,6 +10,7 @@ See [Configuration](https://github.com/lucadentella/LnControlPanel/blob/main/CON
 In INPUT mode, a channel can **control** the status of a sensor or the position of a turnout.
 
 Connect a button between **SIGNAL** and **GND**:
+
 ![](https://github.com/lucadentella/LnControlPanel/blob/main/images/con-btn.png?raw=true)
 
 When the button is pressed, the status of the sensor or the position of the turnout is **switched**.
