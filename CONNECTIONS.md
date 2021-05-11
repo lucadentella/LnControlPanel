@@ -11,6 +11,7 @@ In INPUT mode, a channel can **control** the status of a sensor or the position 
 
 Connect a button between **SIGNAL** and **GND**:
 ![](https://github.com/lucadentella/LnControlPanel/blob/main/images/con-btn.png?raw=true)
+
 When the button is pressed, the status of the sensor or the position of the turnout is **switched**.
 
 If the channel is configured as **MSENSOR** (*Momentary Sensor*), the sensor is set **ACTIVE** when the button is pressed and **INACTIVE** when released.
