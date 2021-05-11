@@ -7,7 +7,7 @@ LnControlPanel is an opensource board to create Loconet control panels.
 
 ![GitHub](https://img.shields.io/github/license/lucadentella/LnControlPanel)
 
-## Features
+## Features :trophy:
 
  - **32** independent channels:
    - each channel can be configured as **input** (to *control*) or as **output** (to *monitor)*
@@ -17,11 +17,11 @@ LnControlPanel is an opensource board to create Loconet control panels.
  - Based on **Arduino** framework and opensource libraries
  - Configurable using a simple **menu** via **serial** connection
  
-## Documentation
+## Documentation :notebook:
  - [Part list](https://github.com/lucadentella/LnControlPanel/blob/main/PARTLIST.md)
  - [How to configure the channels](https://github.com/lucadentella/LnControlPanel/blob/main/CONFIGURATION.md)
  - [How to connect buttons/LEDs](https://github.com/lucadentella/LnControlPanel/blob/main/CONNECTIONS.md) 
 
-## Requirements
+## Requirements :heavy_check_mark:
  - [mrrwa Loconet Library](https://github.com/mrrwa/LocoNet)
  - [Adafruit MCP23017 Library](https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library)
