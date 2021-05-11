@@ -1,11 +1,10 @@
 # LnControlPanel
-![GitHub](https://img.shields.io/github/license/lucadentella/LnControlPanel)
-
 ![](https://github.com/lucadentella/LnControlPanel/raw/main/images/board.jpg)
 
 ## Description
 
 LnControlPanel is an opensource board to create Loconet control panels.
+![GitHub](https://img.shields.io/github/license/lucadentella/LnControlPanel)
 
 ## Features
 
