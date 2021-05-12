@@ -4,7 +4,7 @@ LnControlPanel has **32 independent** channels. Each channel can be connected to
  - a **BUTTON** (if the channel is in INPUT mode)
  - one or two **LEDs** (if the channel is in OUTPUT mode)
 
-See [Configuration](https://github.com/lucadentella/LnControlPanel/blob/main/CONFIGURATION.md) to learn how to configure channel properties. 
+See [Configuration](https://github.com/lucadentella/LnControlPanel/blob/main/Documentation/CONFIGURATION.md) to learn how to configure channel properties. 
  
  ## INPUT - Button
 In INPUT mode, a channel can **control** the status of a sensor or the position of a turnout.
