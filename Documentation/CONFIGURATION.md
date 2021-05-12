@@ -17,7 +17,7 @@ To summarize, each channel has the following parameters:
 |--|--|--|
 |Input/Output|Turnout/Sensor/MSensor|*element address*
 
-See [Connections](https://github.com/lucadentella/LnControlPanel/blob/main/CONNECTIONS.md) to learn how to connect buttons/LEDs to the channels. 
+See [Connections](https://github.com/lucadentella/LnControlPanel/blob/main/Documentation/CONNECTIONS.md) to learn how to connect buttons/LEDs to the channels. 
 
 ## Serial console :electric_plug:
 It is possible to configure LnControlPanel using a **serial terminal** (for example *Arduino Serial Monitor*).
