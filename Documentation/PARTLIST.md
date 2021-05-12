@@ -1,4 +1,4 @@
-# Part list
+# Part list :gift:
 | ID | Description | 
 |--|--|
 | R1 | 1Kohm 1/4W resistor |
