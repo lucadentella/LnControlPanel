@@ -25,3 +25,5 @@ LnControlPanel is an opensource board to create Loconet control panels.
 ## Requirements :heavy_check_mark:
  - [mrrwa Loconet Library](https://github.com/mrrwa/LocoNet)
  - [Adafruit MCP23017 Library](https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library)
+
+*The libraries above can be installed via the* [Library Manager](https://www.arduino.cc/en/guide/libraries)
