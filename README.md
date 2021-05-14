@@ -17,13 +17,13 @@ LnControlPanel is an opensource board to create Loconet control panels.
  - Based on **Arduino** framework and opensource libraries
  - Configurable using a simple **menu** via **serial** connection
 
-## Resources :open_file_folder:
- - [Eagle files](https://github.com/lucadentella/LnControlPanel/tree/main/Eagle) (schematic / PCB)
- - [Arduino firmware](https://github.com/lucadentella/LnControlPanel/tree/main/Arduino)
-
 ## Tutorials :video_camera:
  - [LnControlPanel on Youtube (ENG)](https://youtu.be/r6l4IHOCdZg)
  - [LnControlPanel su Youtube (ITA)](https://youtu.be/eZ9PHgq4dks)
+
+## Resources :open_file_folder:
+ - [Eagle files](https://github.com/lucadentella/LnControlPanel/tree/main/Eagle) (schematic / PCB)
+ - [Arduino firmware](https://github.com/lucadentella/LnControlPanel/tree/main/Arduino)
 
 ## Documentation :notebook:
  - [Schematic](https://github.com/lucadentella/LnControlPanel/tree/main/Documentation/Schematic.pdf) (PDF)
