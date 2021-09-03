@@ -7,13 +7,14 @@
 // Momentary sensors
 
 // Definitions
-#define VERSION       "1.2"
+#define VERSION       "1.3"
 #define IOPINS        32
 #define CONFIGVALID   111
 #define CMDLINESIZE   100
 #define DEV_TURNOUT   0
 #define DEV_SENSOR    1
 #define DEV_MSENSOR   2
+#define SWITCH_MS     200  
 
 // Pins configuration
 typedef struct {
@@ -159,6 +160,8 @@ void checkInputs() {
       if(buttonStatus == 0 && !wasPinDown[i]) {
         wasPinDown[i] = true;
         if(pinInfo[i].deviceType == DEV_TURNOUT) {
+          LocoNet.requestSwitch(pinInfo[i].dccAddress, 1, isPinStraight[i]);
+          delay(SWITCH_MS);
           LocoNet.requestSwitch(pinInfo[i].dccAddress, 0, isPinStraight[i]);
           Serial.print("Sent switch command - ");
           Serial.print("address: "); Serial.print(pinInfo[i].dccAddress);
