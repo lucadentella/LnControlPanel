@@ -58,8 +58,8 @@ void setup() {
   LocoNet.init();
   Serial.println(F("LocoNet init complete"));
 
-  mcp1.begin();
-  mcp2.begin(1);
+  mcp1.begin(0x20);
+  mcp2.begin(0x21);
   Serial.println(F("MCP23017 library init complete"));
  
   for(int i = 0; i < IOPINS; i++) setPinDirection(i, pinInfo[i].isInput);
@@ -148,7 +148,7 @@ void writePinOutput(uint8_t p, uint8_t d) {
 // check inputs
 void checkInputs() {
 
-  for(int i = 0; i < IOPINS / 2; i++) {
+  for(int i = 0; i < IOPINS; i++) {
 
     if(pinInfo[i].isInput) {
 
