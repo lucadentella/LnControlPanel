@@ -1,13 +1,18 @@
 #include <LocoNet.h>
 #include <Wire.h>
 #include <EEPROM.h>
-#include "Adafruit_MCP23017.h"
+#include <Adafruit_MCP23X17.h>
 
-// LnControlPanel 1.2
-// Momentary sensors
+// LnControlPanel 2.0
+
+// Support for the updated version of Adafruit Library (tested with v2.1)
+// https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library
+
+// Make sure you have an updated version of Adafruit BusIO too
+// https://github.com/adafruit/Adafruit_BusIO
 
 // Definitions
-#define VERSION       "1.3"
+#define VERSION       "2.0"
 #define IOPINS        32
 #define CONFIGVALID   111
 #define CMDLINESIZE   100
@@ -24,8 +29,8 @@ typedef struct {
 } PinInfo;
 
 // Global variables
-Adafruit_MCP23017 mcp1;
-Adafruit_MCP23017 mcp2;
+Adafruit_MCP23X17 mcp1;
+Adafruit_MCP23X17 mcp2;
 lnMsg *LnPacket;
 PinInfo pinInfo[IOPINS];
 bool isPinStraight[IOPINS];
@@ -58,8 +63,8 @@ void setup() {
   LocoNet.init();
   Serial.println(F("LocoNet init complete"));
 
-  mcp1.begin();
-  mcp2.begin(1);
+  mcp1.begin_I2C(0x20);
+  mcp2.begin_I2C(0x21);
   Serial.println(F("MCP23017 library init complete"));
  
   for(int i = 0; i < IOPINS; i++) setPinDirection(i, pinInfo[i].isInput);
@@ -127,14 +132,8 @@ void setPinDirection(uint8_t p, bool isInput) {
     if(p < 16) mcp1.pinMode(p, OUTPUT);
     else mcp2.pinMode(p - 16, OUTPUT);
   } else {
-    if(p < 16) {
-      mcp1.pinMode(p, INPUT);
-      mcp1.pullUp(p, HIGH);
-    }
-    else {
-      mcp2.pinMode(p - 16, INPUT);
-      mcp2.pullUp(p - 16, HIGH);
-    }
+    if(p < 16) mcp1.pinMode(p, INPUT_PULLUP);
+    else mcp2.pinMode(p - 16, INPUT_PULLUP);
   }
 }
 
@@ -148,7 +147,7 @@ void writePinOutput(uint8_t p, uint8_t d) {
 // check inputs
 void checkInputs() {
 
-  for(int i = 0; i < IOPINS / 2; i++) {
+  for(int i = 0; i < IOPINS; i++) {
 
     if(pinInfo[i].isInput) {
 
